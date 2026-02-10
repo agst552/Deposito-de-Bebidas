@@ -6,11 +6,11 @@ async function carregarBebidas() {
         bebidas.forEach (bebida => {
             container.innerHTML += `
             <div class="card">
-                    <img src="${bebida.imagem}" alt="${bebida.nome}">
-                    <h3>${bebida.nome}</h3>
-                    <p>Categoria: ${bebida.categoria}</p>
+                    <img src="${bebida.imagem}" alt="${bebida.nome}" id="img-card">
+                    <h3 id="nome-card">${bebida.nome}</h3>
+                    <p class="categoria">Categoria: ${bebida.categoria}</p>
                     <p class="preco">R$ ${bebida.preco}</p>
-                </div>
+            </div>
             `;
         })
     } catch (error) {

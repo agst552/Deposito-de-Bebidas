@@ -8,13 +8,34 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="/media/bebidas/Agrupar 1.png" alt="Logo Depósito de Bebidas" class="logo">
-            <h1>JC Bebidas</h1>
-            
-        </header>
-        <div id="lista-bebidas"></div>
-    </div>
+    <header>
+        <div class="header-dentro"> 
+            <div class="gp-logo">
+                <img src="/media/bebidas/Logo.png" alt="Logo Depósito de Bebidas" class="logo">
+                <h1>JC Bebidas</h1>
+            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#">Contato</a></li>                    
+            </ul>
+            <button> <img src="/media/bebidas/compra.png" alt="Carrinho"></button>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content"> 
+            <span id="text-principal">A <br> EXPERIÊNCIA DA <br> BEBIDA PERFEITA, <br> NA SUA PORTA</span>
+            <button id="btn-catalogo">Ver Catálogo</button>
+        </div>
+        <img src="/media/bebidas/Agrupar 1.png" alt="Garrafa Heineken" class="img-principal">
+    </section>
+
+    <section id="produtos" class="produtos">
+        <h2>Produtos em Destaque</h2>
+        <div id="lista-bebidas">
+
+        </div>
+    </section>
 </body>
 </html>
