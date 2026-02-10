@@ -107,6 +107,33 @@ a {
     border: 2px solid white;
     color: #D4AF37;
 }
+
+.modal {
+    /* display: none; Esconde o modal por padrão */
+    position: fixed; /* Fixa o modal na tela */
+    z-index: 1; /* Garante que o modal fique acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total da tela */
+    height: 100%; /* Altura total da tela */
+    overflow: auto; /* Habilita rolagem se necessário */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.hidden {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal-content {
+    width: 350px;
+    background-color: #fefefe;
+    margin: 15% auto; /* Centraliza o modal */
+    padding: 20px;
+    border: 1px solid #888;
+}
+
 .img-principal {
     max-width: 700px; 
     width: 100%;

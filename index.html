@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Depósito de Bebidas</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <script src="/src/app.js" defer></script>
+    <script src="/src/modal.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,7 +27,19 @@
     <section id="inicio" class="hero">
         <div class="hero-content"> 
             <span id="text-principal">A <br> EXPERIÊNCIA DA <br> BEBIDA PERFEITA, <br> NA SUA PORTA</span>
-            <button id="btn-catalogo">Ver Catálogo</button>
+            <button id="btn-catalogo" class="abrirModal">Ver Catálogo</button>
+            <div class="modal hidden" id="modal">
+                    <div class="modal-content">
+                        <h2>Catálogo de Produtos</h2>
+                        <p>Aqui você pode encontrar uma variedade de bebidas para todas as ocasiões. Explore nosso catálogo e escolha suas favoritas!</p>
+                        <ul>
+                            <li>Cervejas</li>
+                            <li>Refrigerantes</li>
+                            <li>Águas</li>
+                            <li>Suco</li>
+                        </ul>
+            </div>
+            <!-- <button>X</button> -->
         </div>
         <img src="/media/bebidas/Agrupar 1.png" alt="Garrafa Heineken" class="img-principal">
     </section>
