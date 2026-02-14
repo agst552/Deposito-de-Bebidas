@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/src/styles/style.css">
     <script src="/src/app.js" defer></script>
     <script src="/src/modal.js" defer></script>
+    <script src="/src/modalsec.js" defer></script>
 </head>
 <body>
     <header>
@@ -36,7 +37,7 @@
                     </div>
                 
                     <div class="modal-body">
-                        <div class="categoria-card">
+                        <div class="categoria-card" id="cervejas">
                             <span class="icon">🍺</span>
                             <h4>Cervejas</h4>
                             <p>Nacionais e Importadas</p>
@@ -65,10 +66,16 @@
                         <a href="#produtos">Ver catálogo completo →</a>
                     </div>
                 </div>
+            </div>
+            <div class="modal-sec hidden" id="modal-sec">
+                <div class="cervejas-content">
+                    <div class="cervejas-header">
+                        <button id="voltar-one">⬅️Voltar</button>
+                        <h3>Cervejas</h3>
+                        <button class="fecharCervejas fecharModal">&times;</button>
+                    </div>
 
-                <div class="modal-cervejas">
-                    <div class="modal-sec" id="modal-sec">
-                        Cervejas
+                    <div id="container-produtos-cerveja">
                     </div>
                 </div>
             </div>
