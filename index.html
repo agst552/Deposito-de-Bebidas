@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,20 +26,52 @@
 
     <section id="inicio" class="hero">
         <div class="hero-content"> 
-            <span id="text-principal">A <br> EXPERIÊNCIA DA <br> BEBIDA PERFEITA, <br> NA SUA PORTA</span>
-            <button id="btn-catalogo" class="abrirModal">Ver Catálogo</button>
+                <span id="text-principal">A <br> EXPERIÊNCIA DA <br> BEBIDA PERFEITA, <br> NA SUA PORTA</span>
+                <button id="btn-catalogo" class="abrirModal">Ver Catálogo</button>
             <div class="modal hidden" id="modal">
-                    <div class="modal-content">
-                        <h2>Catálogo de Produtos</h2>
-                        <p>Aqui você pode encontrar uma variedade de bebidas para todas as ocasiões. Explore nosso catálogo e escolha suas favoritas!</p>
-                        <ul>
-                            <li>Cervejas</li>
-                            <li>Refrigerantes</li>
-                            <li>Águas</li>
-                            <li>Suco</li>
-                        </ul>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>O que você deseja beber?</h3>
+                        <button class="fecharModal">&times;</button>
+                    </div>
+                
+                    <div class="modal-body">
+                        <div class="categoria-card">
+                            <span class="icon">🍺</span>
+                            <h4>Cervejas</h4>
+                            <p>Nacionais e Importadas</p>
+                        </div>
+                    
+                        <div class="categoria-card">
+                            <span class="icon">🥃</span>
+                            <h4>Destilados</h4>
+                            <p>Whisky, Gin e Vodka</p>
+                        </div>
+                    
+                        <div class="categoria-card">
+                            <span class="icon">🍷</span>
+                            <h4>Vinhos</h4>
+                            <p>Tintos e Brancos</p>
+                        </div>
+                    
+                        <div class="categoria-card">
+                            <span class="icon">🥤</span>
+                            <h4>Não Alcoólicos</h4>
+                            <p>Água, Refri e Sucos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="btn-catalogo">
+                        <a href="#produtos">Ver catálogo completo →</a>
+                    </div>
+                </div>
+
+                <div class="modal-cervejas">
+                    <div class="modal-sec" id="modal-sec">
+                        Cervejas
+                    </div>
+                </div>
             </div>
-            <!-- <button>X</button> -->
         </div>
         <img src="/media/bebidas/Agrupar 1.png" alt="Garrafa Heineken" class="img-principal">
     </section>

@@ -1,0 +1,59 @@
+
+/* Container da Section Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 60px 0; /* Adicione um respiro vertical */
+    gap: 40px;
+    /* border: 2px solid red; */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 600px; */
+    /* border: 2px solid blue; */
+}
+
+#text-principal {
+    color: white;
+    font-size: 75px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    line-height: 1.1;
+}
+
+#btn-catalogo {
+    width: 250px;
+    height: 60px;
+    padding: 15px 40px;
+    background-color: #D4AF37;
+    border: none;
+    border-radius: 50px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #000835;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-catalogo:hover {
+    background-color: #000835;
+    border: 2px solid white;
+    color: #D4AF37;
+}
+
+
+.img-principal {
+    max-width: 700px; 
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
