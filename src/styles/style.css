@@ -3,9 +3,11 @@
 @import url('/src/styles/header.css');
 @import url('/src/styles/hero-section.css');
 @import url('/src/styles/modal.css');
-@import url('/src/styles/modalsec.css');
+@import url('/src/styles/modalCervejas.css');
 @import url('/src/styles/produtos.css');
-
+@import url('/src/styles/modalDestilados.css');
+@import url('/src/styles/modalVinhos.css');
+@import url('/src/styles/modalSemAlcool.css');
 
 
 *{   

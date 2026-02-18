@@ -30,30 +30,37 @@
 .cervejas-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 15px;
 }
 
+.gp-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.gp-header h3 {
+    margin: 0;
+    color: #D4AF37;
+    font-size: 40px;
+}
+
 #voltar-one {
     background: transparent;
     border: none;
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    color: #D4AF37;
+    font-size: 20px;
     cursor: pointer;
     line-height: 1;
     transition: 0.3s;
 }
 
-#box-cervejas {
-    display: flex;
-    flex-direction: column; 
-    gap: 15px;
-    max-height: 400px; 
-    padding-right: 10px;
-    overflow-y: auto; 
-    flex-grow: 1;
+#voltar-one:hover {
+    color: rgb(255, 255, 255);
 }
 
 .cervejas-content::-webkit-scrollbar {
@@ -70,31 +77,79 @@
     cursor: pointer;
 }
 
+#container-produtos-cerveja {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os cards horizontalmente */
+    gap: 20px;
+    width: 100%;
+    padding: 20px 0;
+}
+
 .produto-card-horizontal {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Espaça imagem, texto e botão */
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(212, 175, 55, 0.3);
-    border-radius: 10px;
-    padding: 10px;
-    justify-content: space-between;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 830px; /* Largura máxima conforme seu modelo */
+    transition: transform 0.2s;
 }
 
+.produto-card-horizontal:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+/* Imagem da Cerveja */
 .img-produto-modal {
-    width: 50px;
-    height: auto;
+    width: 100px;
+    height: 120px;
     object-fit: contain;
+}
+
+/* Bloco de informações central */
+.info-produto {
+    flex-grow: 1; /* Faz o texto ocupar o espaço central */
+    margin-left: 30px;
+    text-align: left;
 }
 
 .info-produto h3 {
     color: #fff;
-    font-size: 1rem;
-    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
 }
 
-.info-produto p {
-    color: #D4AF37;
-    margin: 5px 0 0 0;
+.preco-modal {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.estoque-modal {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+/* Botão de Carrinho à Direita */
+.btn-add-modal {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-add-modal:hover {
+    background: #D4AF37;
+    color: black;
 }
 
 

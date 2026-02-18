@@ -3,6 +3,8 @@ const modalSecContent = document.getElementById("modal-sec");
 const modalPrim = document.getElementById("modal");
 const VoltarSec = document.getElementById("voltar-one");
 const fecharCervejas = document.querySelector(".fecharCervejas");
+const estoque = document.querySelector(".estoque-modal");
+
 
 fecharCervejas.addEventListener('click', () => {
     modalSecContent.classList.add('hidden');
@@ -27,3 +29,12 @@ window.addEventListener('click', (e) => {
         modalSecContent.classList.add('hidden');
         modalPrim.classList.remove('hidden');
 }});
+
+
+if (estoque) {
+    if (parseInt(estoque.textContent.replace('Estoque: ', '').replace(' un.', '')) === 0) {
+        buttonAdd = document.querySelector(".btn-add-modal");
+        if (buttonAdd) {
+            buttonAdd.disabled = true;
+            buttonAdd.textContent = "Produto Indisponível";
+        }}}

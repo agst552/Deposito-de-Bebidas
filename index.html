@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Depósito de Bebidas</title>
     <link rel="stylesheet" href="/src/styles/style.css">
-    <script src="/src/app.js" defer></script>
-    <script src="/src/modal.js" defer></script>
-    <script src="/src/modalsec.js" defer></script>
+    <script src="src/app.js" defer></script>
+    <script src="src/modal.js" defer></script>
+    <script src="src/modalCerveja.js" defer></script>
+    <script src="src/modalDestilados.js" defer></script>
+    <script src="src/modalVinhos.js" defer></script>
+    <script src="src/modalSemAlcool.js" defer></script>
 </head>
 <body>
     <header>
@@ -43,19 +46,19 @@
                             <p>Nacionais e Importadas</p>
                         </div>
                     
-                        <div class="categoria-card">
+                        <div class="categoria-card" id="destilados">
                             <span class="icon">🥃</span>
                             <h4>Destilados</h4>
                             <p>Whisky, Gin e Vodka</p>
                         </div>
                     
-                        <div class="categoria-card">
+                        <div class="categoria-card" id="vinhos">
                             <span class="icon">🍷</span>
                             <h4>Vinhos</h4>
                             <p>Tintos e Brancos</p>
                         </div>
                     
-                        <div class="categoria-card">
+                        <div class="categoria-card" id="sem-alcool">
                             <span class="icon">🥤</span>
                             <h4>Não Alcoólicos</h4>
                             <p>Água, Refri e Sucos</p>
@@ -63,15 +66,17 @@
                     </div>
                     
                     <div class="btn-catalogo">
-                        <a href="#produtos">Ver catálogo completo →</a>
+                        <!-- <a href="#produtos">Ver catálogo completo →</a> -->
                     </div>
                 </div>
             </div>
             <div class="modal-sec hidden" id="modal-sec">
                 <div class="cervejas-content">
                     <div class="cervejas-header">
-                        <button id="voltar-one">⬅️Voltar</button>
-                        <h3>Cervejas</h3>
+                        <div class="gp-header">
+                            <button id="voltar-one"> < Voltar</button>
+                            <h3>Cervejas</h3>
+                        </div>
                         <button class="fecharCervejas fecharModal">&times;</button>
                     </div>
 
@@ -79,14 +84,58 @@
                     </div>
                 </div>
             </div>
+
+            <div class="modal-destilados hidden" id="modal-destilados">
+                <div class="destilados-content">
+                    <div class="destilados-header">
+                        <div class="gp-header">
+                            <button id="voltar-destilados"> < Voltar</button>
+                            <h3>Destilados</h3>
+                        </div>
+                        <button class="fecharDestilados fecharModal">&times;</button>
+                    </div>
+
+                    <div id="container-produtos-destilados">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-vinhos hidden" id="modal-vinhos">
+                <div class="vinhos-content">
+                    <div class="vinhos-header">
+                        <div class="gp-header">
+                            <button id="voltar-vinhos"> < Voltar</button>
+                            <h3>Vinhos</h3>
+                        </div>
+                        <button class="fecharVinhos fecharModal">&times;</button>
+                    </div>
+
+                    <div id="container-produtos-vinhos">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-sem-alcool hidden" id="modal-sem-alcool">
+                <div class="sem-alcool-content">
+                    <div class="sem-alcool-header">
+                        <div class="gp-header">
+                            <button id="voltar-sem-alcool"> < Voltar</button>
+                            <h3>Não Alcoólicos</h3>
+                        </div>
+                        <button class="fecharSemAlcool fecharModal">&times;</button>
+                    </div>
+
+                    <div id="container-produtos-sem-alcool">
+                    </div>
+                </div>
+            </div>
         </div>
-        <img src="/media/bebidas/Agrupar 1.png" alt="Garrafa Heineken" class="img-principal">
+        <img src="/media/bebidas/bebidaPrincipal.png" alt="Garrafa Heineken" class="img-principal">
     </section>
 
     <section id="produtos" class="produtos">
         <h2>Produtos em Destaque</h2>
         <div id="lista-bebidas">
-
         </div>
     </section>
 </body>
